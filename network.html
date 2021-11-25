@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <title>MetaMask</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" title="ltr">
+    <link rel="stylesheet" type="text/css" href="./index-rtl.css" title="rtl" disabled="">
+    <link rel="stylesheet" href="./css/all.min.css">
+
+  <style></style><style data-jss="" data-meta="MuiInputBase">
+@-webkit-keyframes mui-auto-fill {}
+@-webkit-keyframes mui-auto-fill-cancel {}
+.MuiInputBase-root {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  position: relative;
+  font-size: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.1876em;
+  letter-spacing: 0.00938em;
+}
+.MuiInputBase-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+  cursor: default;
+}
+.MuiInputBase-multiline {
+  padding: 6px 0 7px;
+}
+.MuiInputBase-multiline.MuiInputBase-marginDense {
+  padding-top: 3px;
+}
+.MuiInputBase-fullWidth {
+  width: 100%;
+}
+.MuiInputBase-input {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  height: 1.1876em;
+  margin: 0;
+  display: block;
+  padding: 6px 0 7px;
+  min-width: 0;
+  background: none;
+  box-sizing: content-box;
+  animation-name: mui-auto-fill-cancel;
+  letter-spacing: inherit;
+  animation-duration: 10ms;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiInputBase-input::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input::-moz-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input:-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input::-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input:focus {
+  outline: 0;
+}
+.MuiInputBase-input:invalid {
+  box-shadow: none;
+}
+.MuiInputBase-input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.MuiInputBase-input.Mui-disabled {
+  opacity: 1;
+}
+.MuiInputBase-input:-webkit-autofill {
+  animation-name: mui-auto-fill;
+  animation-duration: 5000s;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-webkit-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-moz-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:-ms-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-ms-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-webkit-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-moz-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus:-ms-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-ms-input-placeholder {
+  opacity: 0.42;
+}
+.MuiInputBase-inputMarginDense {
+  padding-top: 3px;
+}
+.MuiInputBase-inputMultiline {
+  height: auto;
+  resize: none;
+  padding: 0;
+}
+.MuiInputBase-inputTypeSearch {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+</style><style data-jss="" data-meta="MuiInput">
+.MuiInput-root {
+  position: relative;
+}
+label + .MuiInput-formControl {
+  margin-top: 16px;
+}
+.MuiInput-colorSecondary.MuiInput-underline:after {
+  border-bottom-color: #f50057;
+}
+.MuiInput-underline:after {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  border-bottom: 2px solid #3f51b5;
+  pointer-events: none;
+}
+.MuiInput-underline.Mui-focused:after {
+  transform: scaleX(1);
+}
+.MuiInput-underline.Mui-error:after {
+  transform: scaleX(1);
+  border-bottom-color: #f44336;
+}
+.MuiInput-underline:before {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "\00a0";
+  position: absolute;
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  pointer-events: none;
+}
+.MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.87);
+}
+.MuiInput-underline.Mui-disabled:before {
+  border-bottom-style: dotted;
+}
+@media (hover: none) {
+  .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  }
+}
+</style><style data-jss="" data-meta="MuiFormControl">
+.MuiFormControl-root {
+  border: 0;
+  margin: 0;
+  display: inline-flex;
+  padding: 0;
+  position: relative;
+  min-width: 0;
+  flex-direction: column;
+  vertical-align: top;
+}
+.MuiFormControl-marginNormal {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.MuiFormControl-marginDense {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.MuiFormControl-fullWidth {
+  width: 100%;
+}
+</style><style data-jss="" data-meta="MuiTextField">
+
+</style><style data-jss="" data-meta="makeStyles">
+.jss1 {
+  color: #aeaeae;
+  font-weight: 400;
+}
+.jss1.jss2 {
+  color: #aeaeae;
+}
+.jss1.jss4 {
+  color: #aeaeae;
+}
+.jss3:after {
+  border-bottom: 2px solid rgb(3, 125, 214);
+}
+.jss5 {
+  color: #aeaeae;
+}
+.jss6 {
+  padding: 8px;
+}
+.jss6::placeholder {
+  color: #aeaeae;
+}
+.jss7 {
+  color: #fff;
+}
+.jss8:after {
+  border-bottom: 2px solid #fff;
+}
+.jss9.jss10 {
+  color: #5b5b5b;
+}
+.jss9.jss4 {
+  color: #5b5b5b;
+}
+.jss12 {
+  border: 1px solid #BBC0C5;
+  height: 48px;
+  display: flex;
+  padding: 0 16px;
+  align-items: center;
+  border-radius: 6px;
+}
+label + .jss12 {
+  margin-top: 9px;
+}
+.jss12.jss11 {
+  border: 1px solid #2f9ae0;
+}
+.jss13 {
+  color: #5b5b5b;
+  position: initial;
+  font-size: 1rem;
+  transform: none;
+  transition: none;
+}
+.jss14 {
+  color: #5b5b5b;
+  position: initial;
+  font-size: .75rem;
+  transform: none;
+  transition: none;
+}
+.jss15 {
+  line-height: initial !important;
+}
+</style></head>
+
+<body>
+<div id="app-content">
+  <div class="app os-win browser-chrome mouse-user-styles">
+    <div class="app-header app-header--back-drop">
+      <div class="app-header__contents">
+        <div class="app-header__logo-container app-header__logo-container--clickable">
+          <a href="home.html">
+            <img height="30" src="./images/logo/metamask-logo-horizontal.svg" class="app-header__metafox-logo--horizontal" alt="">
+          </a>
+            <img src="./images/logo/metamask-fox.svg" class="app-header__metafox-logo--icon" alt="">
+            </div>
+            <div class="app-header__account-menu-container">
+              <div class="app-header__network-component-wrapper">
+                <div class="network-display network-display--clickable chip chip--with-left-icon chip--with-right-icon chip--ui-3" role="button" tabindex="0">
+                  <div class="chip__left-icon">
+                    <div class="color-indicator color-indicator--filled color-indicator--color-mainnet color-indicator--size-lg">
+                      <span class="color-indicator__inner-circle"></span>
+                    </div>
+                  </div>
+                  <span class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography chip__label typography--h7 typography--weight-normal typography--style-normal typography--color-ui-4">Ethereum Mainnet</span>
+                  <div class="chip__right-icon">
+                    <i class="network-display__icon app-header__network-down-arrow"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="account-menu__icon">
+                <div class="identicon__address-wrapper">
+                  <div class="identicon" style="height: 32px; width: 32px; border-radius: 16px;">
+                    <div style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 32px; height: 32px; display: inline-block; background: rgb(35, 136, 225);">
+                      <svg x="0" y="0" width="32" height="32">
+                        <rect x="0" y="0" width="32" height="32" transform="translate(-5.172837578555918 1.5158478580325507) rotate(325.9 16 16)" fill="#F91201"></rect>
+                        <rect x="0" y="0" width="32" height="32" transform="translate(-14.507272906085163 -2.4501698202006295) rotate(282.6 16 16)" fill="#FA4700"></rect>
+                        <rect x="0" y="0" width="32" height="32" transform="translate(-10.632418383359626 20.842829477045616) rotate(193.2 16 16)" fill="#C8146E"></rect>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-droppo-container network-droppo" style="position: absolute; top: 58px; width: 309px; z-index: 55;">
+          <style>
+        .menu-droppo-enter {
+          transition: transform 300ms ease-in-out;
+          transform: translateY(-200%);
+        }
+
+        .menu-droppo-enter.menu-droppo-enter-active {
+          transition: transform 300ms ease-in-out;
+          transform: translateY(0%);
+        }
+
+        .menu-droppo-leave {
+          transition: transform 300ms ease-in-out;
+          transform: translateY(0%);
+        }
+
+        .menu-droppo-leave.menu-droppo-leave-active {
+          transition: transform 300ms ease-in-out;
+          transform: translateY(-200%);
+        }
+      </style>
+        </div>
+        <div class="main-container-wrapper" style="margin-top: 60px;">
+
+                <!-- QUICK ADD -->
+                <div class="main-container" style="display: flex; align-items: center; flex-direction: column;">
+                    <div onclick="quickAdd()" class="main-container__header-wrapper" style="border-style: none; border-bottom-style: solid;">
+                      <div class="main-container__header">
+                        <i class="fas fa-chevron-right asset-list-item__chevron-right"></i>
+                        <h3>Quick Add</h3>
+                      </div>
+                    </div>
+
+                    <div id="quickAdd">
+                      <div style="display:flex; align-items: center; width: 100%; justify-content: center;">
+                       <div style="width: 70%; margin: 10px;">
+                          <div class="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth">
+                            <div class="MuiInputBase-root MuiInput-root jss12 Mui-disabled Mui-disabled MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-marginDense MuiInput-marginDense">
+                              <input aria-invalid="false" id="rpc-url" type="text" dir="auto" class="MuiInputBase-input MuiInput-input Mui-disabled Mui-disabled MuiInputBase-inputMarginDense MuiInput-inputMarginDense" value="Search Networks" disabled="">
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <!-- BSC -->
+                      <div class="network-item list-item asset-list-item" style="padding-left: 10%;  " >
+                        <div class="list-item__icon" style="display: flex; align-items: center;">
+                          <img class="identicon identicon__image-border" src="images/bnb.png" style="height: 40px; width: 40px; border-radius: 25px;">
+                          <h2 style="width: 200px;">
+                            Binance Smart Chain
+                          </h2>
+                        </div>
+
+                        <div class="list-item__right-content" style="display: flex; align-items: center;">
+                          <img class="identicon identicon__image-border" src="images/cake.png" style="height: 40px; width: 40px; border-radius: 25px;">
+                          <img class="identicon identicon__image-border" src="images/alpaca.jpg" style="height: 40px; width: 40px; border-radius: 25px;">
+                        </div>
+
+
+                        </div>
+                        <!-- ./BSC -->
+
+                        <!-- AVAX -->
+                        <div class="network-item list-item asset-list-item" style="padding-left: 10%;  " >
+                            <div class="list-item__icon" style="display: flex; align-items: center;">
+                              <img class="identicon identicon__image-border" src="images/avax.png" alt="0.3914 ETH" style="height: 40px; width: 40px; border-radius: 25px;">
+                              <h2 style="width: 200px;">
+                                Avalanche C-Chain
+                              </h2>
+                            </div>
+
+                            <div class="list-item__right-content" style="display: flex; align-items: center;">
+                              <img class="identicon identicon__image-border" src="images/pangolin.png" style="height: 40px; width: 40px; border-radius: 25px;">
+                            </div>
+
+                        </div>
+                          <!-- ./AVAX -->
+
+                          <!-- ETH CLASSIC -->
+                          <div class="network-item list-item asset-list-item" style="padding-left: 10%;  " >
+                              <div class="list-item__icon" style="display: flex; align-items: center;">
+                                <img class="identicon identicon__image-border" src="images/ethclassic.png" alt="0.3914 ETH" style="height: 40px; width: 40px; border-radius: 25px;">
+                                <h2 style="width: 200px;">
+                                  Ethereum Classic
+                                </h2>
+                              </div>
+
+                          </div>
+                            <!-- ./ETH CLASSIC -->
+
+                            <!-- MATIC -->
+                            <div class="network-item list-item asset-list-item" style="padding-left: 10%;  " >
+                                <div class="list-item__icon" style="display: flex; align-items: center;">
+                                  <img class="identicon identicon__image-border" src="images/matic.svg" alt="0.3914 ETH" style="height: 40px; width: 40px; border-radius: 25px;">
+                                  <h2 style="width: 200px;">
+                                    Polygon
+                                  </h2>
+                                </div>
+
+                            </div>
+                              <!-- ./MATIC -->
+
+                              <!-- OKEX -->
+                              <div class="network-item list-item asset-list-item" style="padding-left: 10%;  " >
+                                  <div class="list-item__icon" style="display: flex; align-items: center;">
+                                    <img class="identicon identicon__image-border" src="images/okex.png" alt="0.3914 ETH" style="height: 40px; width: 40px; border-radius: 25px;">
+                                    <h2 style="width: 200px;">
+                                      OKEx
+                                    </h2>
+                                  </div>
+
+                              </div>
+                                <!-- ./OKEX-->
+                            </div>
+
+                  <!-- CUSTOM NETWORK FORM -->
+                  <div onclick="customNetworks()" class="main-container__header-wrapper">
+                    <div class="main-container__header">
+                      <i class="fas fa-chevron-right asset-list-item__chevron-right"></i>
+                      <h3>Custom Network</h3>
+                    </div>
+                  </div>
+
+                    <div class="networks-tab__network-form">
+                      <div class="networks-tab__network-form-row">
+                        <div class="networks-tab__network-form-label">
+                          <div class="networks-tab__network-form-label-text">Network Name</div>
+                        </div>
+                        <div class="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth">
+                          <div class="MuiInputBase-root MuiInput-root jss12 Mui-disabled Mui-disabled MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-marginDense MuiInput-marginDense">
+                            <input aria-invalid="false" id="network-name" type="text" dir="auto" class="MuiInputBase-input MuiInput-input Mui-disabled Mui-disabled MuiInputBase-inputMarginDense MuiInput-inputMarginDense" value="Kovan Test Network" disabled="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="networks-tab__network-form-row">
+                          <div class="networks-tab__network-form-label">
+                            <div class="networks-tab__network-form-label-text">New RPC URL</div>
+                          </div>
+                          <div class="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth">
+                            <div class="MuiInputBase-root MuiInput-root jss12 Mui-disabled Mui-disabled MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-marginDense MuiInput-marginDense">
+                              <input aria-invalid="false" id="rpc-url" type="text" dir="auto" class="MuiInputBase-input MuiInput-input Mui-disabled Mui-disabled MuiInputBase-inputMarginDense MuiInput-inputMarginDense" value="https://kovan.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161" disabled="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="networks-tab__network-form-row">
+                            <div class="networks-tab__network-form-label">
+                              <div class="networks-tab__network-form-label-text">Chain ID</div>
+                            </div>
+                            <div class="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth">
+                              <div class="MuiInputBase-root MuiInput-root jss12 Mui-disabled Mui-disabled MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-marginDense MuiInput-marginDense">
+                                <input aria-invalid="false" id="chainId" type="text" dir="auto" class="MuiInputBase-input MuiInput-input Mui-disabled Mui-disabled MuiInputBase-inputMarginDense MuiInput-inputMarginDense" value="42" disabled="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="networks-tab__network-form-row">
+                              <div class="networks-tab__network-form-label">
+                                <div class="networks-tab__network-form-label-text">Currency Symbol (optional)</div>
+                              </div>
+                              <div class="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth">
+                                <div class="MuiInputBase-root MuiInput-root jss12 Mui-disabled Mui-disabled MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-marginDense MuiInput-marginDense">
+                                  <input aria-invalid="false" id="network-ticker" type="text" dir="auto" class="MuiInputBase-input MuiInput-input Mui-disabled Mui-disabled MuiInputBase-inputMarginDense MuiInput-inputMarginDense" value="ETH" disabled="">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="networks-tab__network-form-row">
+                                <div class="networks-tab__network-form-label">
+                                  <div class="networks-tab__network-form-label-text">Block Explorer URL (optional)</div>
+                                </div>
+                                <div class="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth">
+                                  <div class="MuiInputBase-root MuiInput-root jss12 Mui-disabled Mui-disabled MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-marginDense MuiInput-marginDense">
+                                    <input aria-invalid="false" id="block-explorer-url" type="text" dir="auto" class="MuiInputBase-input MuiInput-input Mui-disabled Mui-disabled MuiInputBase-inputMarginDense MuiInput-inputMarginDense" value="https://kovan.etherscan.io" disabled="">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="network-form__footer">
+
+                                  <!-- Cancel Button -->
+                                  <div style="display:flex; width: 100%; justify-content: center;">
+                                    <a style="width: 150px;">
+                                    <button class="button btn--rounded btn-secondary" role="button" tabindex="0" >
+                                      Cancel
+                                    </button>
+                                    </a>
+                                  </div>
+
+                                  <!-- Save Button -->
+                                  <div style="display:flex; width: 100%; justify-content: center;">
+                                    <a href="home.html" style="width: 150px;">
+                                    <button class="button btn--rounded btn-primary" role="button" tabindex="0" >
+                                      Save
+                                    </button>
+                                    </a>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                          <script src="script.js"></script>
+            </body>
+        </html>

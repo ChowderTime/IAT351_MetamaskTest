@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <title>MetaMask</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" title="ltr">
+    <link rel="stylesheet" type="text/css" href="./index-rtl.css" title="rtl" disabled="">
+    <link rel="stylesheet" href="./css/all.min.css">
+
+  <style></style></head>
+
+<body>
+	<div id="app-content">
+		<div class="app os-win browser-chrome mouse-user-styles">
+			<div class="app-header app-header--back-drop">
+				<div class="app-header__contents">
+
+					<div class="app-header__logo-container app-header__logo-container--clickable">
+            <a href="home.html">
+						  <img height="30" src="images/logo/metamask-logo-horizontal.svg" class="app-header__metafox-logo--horizontal" alt="">
+             </a>
+
+							<img src="images/logo/metamask-fox.svg" class="app-header__metafox-logo--icon" alt="">
+							</div>
+
+							<div class="app-header__account-menu-container">
+								<div class="app-header__network-component-wrapper">
+									<div class="network-display network-display--disabled network-display--clickable chip chip--with-left-icon chip--with-right-icon chip--ui-3" role="button" tabindex="0">
+										<div class="chip__left-icon">
+											<div class="color-indicator color-indicator--filled color-indicator--color-mainnet color-indicator--size-lg">
+												<span class="color-indicator__inner-circle"></span>
+											</div>
+										</div>
+										<span class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography chip__label typography--h7 typography--weight-normal typography--style-normal typography--color-ui-4">Ethereum Mainnet</span>
+										<div class="chip__right-icon">
+											<i class="network-display__icon app-header__network-down-arrow"></i>
+										</div>
+									</div>
+								</div>
+								<div class="account-menu__icon account-menu__icon--disabled">
+									<div class="identicon__address-wrapper">
+										<div class="identicon" style="height: 32px; width: 32px; border-radius: 16px;">
+											<div style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 32px; height: 32px; display: inline-block; background: rgb(35, 136, 225);">
+												<svg x="0" y="0" width="32" height="32">
+													<rect x="0" y="0" width="32" height="32" transform="translate(-5.172837578555918 1.5158478580325507) rotate(325.9 16 16)" fill="#F91201"></rect>
+													<rect x="0" y="0" width="32" height="32" transform="translate(-14.507272906085163 -2.4501698202006295) rotate(282.6 16 16)" fill="#FA4700"></rect>
+													<rect x="0" y="0" width="32" height="32" transform="translate(-10.632418383359626 20.842829477045616) rotate(193.2 16 16)" fill="#C8146E"></rect>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="menu-droppo-container network-droppo" style="position: absolute; top: 58px; width: 309px; z-index: 55;">
+						<style>
+          .menu-droppo-enter {
+            transition: transform 300ms ease-in-out;
+            transform: translateY(-200%);
+          }
+
+          .menu-droppo-enter.menu-droppo-enter-active {
+            transition: transform 300ms ease-in-out;
+            transform: translateY(0%);
+          }
+
+          .menu-droppo-leave {
+            transition: transform 300ms ease-in-out;
+            transform: translateY(0%);
+          }
+
+          .menu-droppo-leave.menu-droppo-leave-active {
+            transition: transform 300ms ease-in-out;
+            transform: translateY(-200%);
+          }
+        </style>
+					</div>
+					<div class="main-container-wrapper">
+						<div class="page-container">
+							<div class="confirm-page-container-navigation" style="display: none;">
+								<div class="confirm-page-container-navigation__container" style="visibility: hidden;">
+									<div class="confirm-page-container-navigation__arrow" data-testid="first-page">
+										<img src="./images/double-arrow.svg" alt="">
+										</div>
+										<div class="confirm-page-container-navigation__arrow" data-testid="previous-page">
+											<img src="./images/single-arrow.svg" alt="">
+											</div>
+										</div>
+										<div class="confirm-page-container-navigation__textcontainer">
+											<div class="confirm-page-container-navigation__navtext">1 of 1</div>
+											<div class="confirm-page-container-navigation__longtext">requests waiting to be acknowledged</div>
+										</div>
+										<div class="confirm-page-container-navigation__container" style="visibility: hidden;">
+											<div class="confirm-page-container-navigation__arrow" data-testid="next-page">
+												<img class="confirm-page-container-navigation__imageflip" src="./images/single-arrow.svg" alt="">
+												</div>
+												<div class="confirm-page-container-navigation__arrow" data-testid="last-page">
+													<img class="confirm-page-container-navigation__imageflip" src="./images/double-arrow.svg" alt="">
+													</div>
+												</div>
+											</div>
+											<div class="confirm-page-container-header">
+												<div class="confirm-page-container-header__row">
+													<div class="confirm-page-container-header__back-button-container" style="visibility: initial;">
+														<img src="./images/caret-left.svg" alt="">
+															<span class="confirm-page-container-header__back-button">Edit</span>
+														</div>
+													</div>
+													<div class="sender-to-recipient sender-to-recipient--default">
+														<div class="sender-to-recipient__party sender-to-recipient__party--sender">
+															<div class="sender-to-recipient__sender-icon">
+																<div class="">
+																	<div class="identicon" style="height: 24px; width: 24px; border-radius: 12px;">
+																		<div style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 24px; height: 24px; display: inline-block; background: rgb(35, 136, 225);">
+																			<svg x="0" y="0" width="24" height="24">
+																				<rect x="0" y="0" width="24" height="24" transform="translate(-3.8796281839169393 1.1368858935244133) rotate(325.9 12 12)" fill="#F91201"></rect>
+																				<rect x="0" y="0" width="24" height="24" transform="translate(-10.880454679563872 -1.8376273651504722) rotate(282.6 12 12)" fill="#FA4700"></rect>
+																				<rect x="0" y="0" width="24" height="24" transform="translate(-7.97431378751972 15.632122107784213) rotate(193.2 12 12)" fill="#C8146E"></rect>
+																			</svg>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="sender-to-recipient__tooltip-wrapper">
+																<div class="sender-to-recipient__tooltip-container" tabindex="0" data-tooltipped="" aria-describedby="tippy-tooltip-6" data-original-title="null" style="display: inline;">
+																	<div class="sender-to-recipient__name">Account 1</div>
+																</div>
+															</div>
+														</div>
+														<div class="sender-to-recipient__arrow-container">
+															<div class="sender-to-recipient__arrow-circle">
+																<img height="15" width="15" src="./images/arrow-right.svg" alt="">
+																</div>
+															</div>
+															<div class="sender-to-recipient__party sender-to-recipient__party--recipient sender-to-recipient__party--recipient-with-address">
+																<div class="sender-to-recipient__sender-icon">
+																	<div class="">
+																		<div class="identicon" style="height: 24px; width: 24px; border-radius: 12px;">
+																			<div style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 24px; height: 24px; display: inline-block; background: rgb(249, 42, 1);">
+																				<svg x="0" y="0" width="24" height="24">
+																					<rect x="0" y="0" width="24" height="24" transform="translate(-3.0480576155487045 5.022955201914738) rotate(245.1 12 12)" fill="#F5AF00"></rect>
+																					<rect x="0" y="0" width="24" height="24" transform="translate(-14.909715240316677 -1.5872125928325087) rotate(300.3 12 12)" fill="#03585E"></rect>
+																					<rect x="0" y="0" width="24" height="24" transform="translate(-11.981491288314112 12.724962908151682) rotate(135.4 12 12)" fill="#FB1873"></rect>
+																				</svg>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="sender-to-recipient__tooltip-wrapper">
+																	<div class="sender-to-recipient__tooltip-container" tabindex="0" data-tooltipped="" aria-describedby="tippy-tooltip-7" data-original-title="null" style="display: inline;">
+																		<div class="sender-to-recipient__name">
+																			<span></span>0x072...4e85
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div>
+														<div class="dialog send__dialog dialog--message">New address detected! Click here to add to your address book.</div>
+													</div>
+													<div class="confirm-page-container-content">
+														<div class="confirm-page-container-summary confirm-page-container-summary--border">
+															<div class="confirm-page-container-summary__action-row">
+																<div class="confirm-page-container-summary__action">Sending ETH</div>
+															</div>
+															<div class="confirm-page-container-summary__title">
+																<div class="confirm-page-container-summary__title-text">
+																	<div class="currency-display-component" title="0">
+																		<img src="./images/eth.svg" height="26" alt="">
+																			<span class="currency-display-component__text">0</span>
+																		</div>
+																	</div>
+																</div>
+																<div class="confirm-page-container-summary__subtitle">
+																	<div class="currency-display-component" title="$0.00">
+																		<span class="currency-display-component__text">$0.00</span>
+																	</div>
+																</div>
+															</div>
+															<div class="confirm-page-container-content__details">
+																<div class="transaction-detail">
+																	<div class="transaction-detail-edit">
+																		<button>Edit</button>
+																	</div>
+																	<div class="transaction-detail-rows">
+																		<div class="transaction-detail-item">
+																			<div class="transaction-detail-item__row">
+																				<h6 class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography transaction-detail-item__title typography--h6 typography--weight-bold typography--style-normal typography--color-black">Estimated gas fee
+																					<div class="info-tooltip">
+																						<div>
+																							<div class="info-tooltip__tooltip-container" tabindex="0" data-tooltipped="" aria-describedby="tippy-tooltip-8" data-original-title="null" style="display: inline;">
+																								<svg viewBox="0 0 10 10"
+																									xmlns="http://www.w3.org/2000/svg">
+																									<path d="M5 0C2.2 0 0 2.2 0 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 2c.4 0 .7.3.7.7s-.3.7-.7.7-.7-.2-.7-.6.3-.8.7-.8zm.7 6H4.3V4.3h1.5V8z" fill="#b8b8b8"></path>
+																								</svg>
+																							</div>
+																						</div>
+																					</div>
+																				</h6>
+																				<h6 class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography transaction-detail-item__detail-text typography--h6 typography--weight-normal typography--style-normal typography--color-ui-4">
+																					<div class="confirm-page-container-content__currency-container">
+																						<div class="loading-heartbeat"></div>
+																						<div class="currency-display-component" title="$9.45">
+																							<span class="currency-display-component__text">$9.45</span>
+																						</div>
+																					</div>
+																				</h6>
+																				<h6 class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography transaction-detail-item__total typography--h6 typography--weight-bold typography--style-normal typography--color-black">
+																					<div class="confirm-page-container-content__currency-container">
+																						<div class="loading-heartbeat"></div>
+																						<div class="currency-display-component" title="0.002286 ETH">
+																							<span class="currency-display-component__text">0.002286</span>
+																							<span class="currency-display-component__suffix">ETH</span>
+																						</div>
+																					</div>
+																				</h6>
+																			</div>
+																			<div class="transaction-detail-item__row">
+																				<div class="transaction-detail-item__subtitle">
+																					<h6 class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography gas-timing gas-timing--positive typography--h7 typography--weight-normal typography--style-normal typography--color-black">Likely in &lt; 30 seconds</h6>
+																				</div>
+																				<h6 class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography transaction-detail-item__subtext typography--h7 typography--weight-normal typography--style-normal typography--color-ui-4">
+																					<span>
+																						<b>Max fee:</b>
+																						<div class="confirm-page-container-content__currency-container">
+																							<div class="loading-heartbeat"></div>
+																							<div class="currency-display-component" title="0.002736 ETH">
+																								<span class="currency-display-component__text">0.002736</span>
+																								<span class="currency-display-component__suffix">ETH</span>
+																							</div>
+																						</div>
+																					</span>
+																				</h6>
+																			</div>
+																		</div>
+																		<div class="transaction-detail-item">
+																			<div class="transaction-detail-item__row">
+																				<h6 class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography transaction-detail-item__title typography--h6 typography--weight-bold typography--style-normal typography--color-black">Total</h6>
+																				<h6 class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography transaction-detail-item__detail-text typography--h6 typography--weight-normal typography--style-normal typography--color-ui-4">
+																					<div class="currency-display-component" title="$9.45">
+																						<span class="currency-display-component__text">$9.45</span>
+																					</div>
+																				</h6>
+																				<h6 class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography transaction-detail-item__total typography--h6 typography--weight-bold typography--style-normal typography--color-black">
+																					<div class="currency-display-component" title="0.002286 ETH">
+																						<span class="currency-display-component__text">0.002286</span>
+																						<span class="currency-display-component__suffix">ETH</span>
+																					</div>
+																				</h6>
+																			</div>
+																			<div class="transaction-detail-item__row">
+																				<h6 class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography transaction-detail-item__subtitle typography--h7 typography--weight-normal typography--style-normal typography--color-ui-4">Amount + gas fee</h6>
+																				<h6 class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography transaction-detail-item__subtext typography--h7 typography--weight-normal typography--style-normal typography--color-ui-4">
+																					<span>
+																						<b>Max amount:</b>
+																						<div class="currency-display-component" title="0.002736 ETH">
+																							<span class="currency-display-component__text">0.002736</span>
+																							<span class="currency-display-component__suffix">ETH</span>
+																						</div>
+																					</span>
+																				</h6>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="page-container__footer">
+																<footer>
+                                  <a href="home.html" style="width: 100%; margin-right: 15px;">
+																	  <button class="button btn--rounded btn-secondary page-container__footer-button" data-testid="page-container-footer-cancel" role="button" tabindex="0">Reject</button>
+                                  </a>
+                                  <a style="width: 100%;" href="complete.html">
+																	   <button class="button btn--rounded btn-primary page-container__footer-button" data-testid="page-container-footer-next" role="button" tabindex="0">Confirm</button>
+                                  </a>
+                                </footer>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div id="popover-content"></div>
+                  </body>
+                  </html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+				<title>MetaMask</title>
+				<link rel="stylesheet" type="text/css" href="./index.css" title="ltr">
+					<link rel="stylesheet" type="text/css" href="./index-rtl.css" title="rtl" disabled="">
+					<link rel="stylesheet" href="./css/all.min.css">
+
+						<style></style>
+					</head>
+					<body>
+						<div id="app-content">
+							<div class="app os-win browser-chrome mouse-user-styles">
+								<div class="app-header app-header--back-drop">
+									<div class="app-header__contents">
+										<div class="app-header__logo-container app-header__logo-container--clickable">
+											<a href="home.html">
+												<img height="30" src="./images/logo/metamask-logo-horizontal.svg" class="app-header__metafox-logo--horizontal" alt="">
+											</a>
+												<img src="./images/logo/metamask-fox.svg" class="app-header__metafox-logo--icon" alt="">
+												</div>
+												<div class="app-header__account-menu-container">
+													<div class="app-header__network-component-wrapper">
+														<div class="network-display network-display--clickable chip chip--with-left-icon chip--with-right-icon chip--ui-3" role="button" tabindex="0">
+															<div class="chip__left-icon">
+																<div class="color-indicator color-indicator--filled color-indicator--color-mainnet color-indicator--size-lg">
+																	<span class="color-indicator__inner-circle"></span>
+																</div>
+															</div>
+															<span class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography chip__label typography--h7 typography--weight-normal typography--style-normal typography--color-ui-4">Ethereum Mainnet</span>
+															<div class="chip__right-icon">
+																<i class="network-display__icon app-header__network-down-arrow"></i>
+															</div>
+														</div>
+													</div>
+													<div class="account-menu__icon">
+														<div class="identicon__address-wrapper">
+															<div class="identicon" style="height: 32px; width: 32px; border-radius: 16px;">
+																<div style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 32px; height: 32px; display: inline-block; background: rgb(35, 136, 225);">
+																	<svg x="0" y="0" width="32" height="32">
+																		<rect x="0" y="0" width="32" height="32" transform="translate(-5.172837578555918 1.5158478580325507) rotate(325.9 16 16)" fill="#F91201"></rect>
+																		<rect x="0" y="0" width="32" height="32" transform="translate(-14.507272906085163 -2.4501698202006295) rotate(282.6 16 16)" fill="#FA4700"></rect>
+																		<rect x="0" y="0" width="32" height="32" transform="translate(-10.632418383359626 20.842829477045616) rotate(193.2 16 16)" fill="#C8146E"></rect>
+																	</svg>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="menu-droppo-container network-droppo" style="position: absolute; top: 58px; width: 309px; z-index: 55;">
+											<style>
+          .menu-droppo-enter {
+            transition: transform 300ms ease-in-out;
+            transform: translateY(-200%);
+          }
+
+          .menu-droppo-enter.menu-droppo-enter-active {
+            transition: transform 300ms ease-in-out;
+            transform: translateY(0%);
+          }
+
+          .menu-droppo-leave {
+            transition: transform 300ms ease-in-out;
+            transform: translateY(0%);
+          }
+
+          .menu-droppo-leave.menu-droppo-leave-active {
+            transition: transform 300ms ease-in-out;
+            transform: translateY(-200%);
+          }
+        </style>
+										</div>
+										<div class="main-container-wrapper">
+											<div class="page-container">
+												<div class="page-container__header send__header" data-testid="page-container__header">
+													<div class="page-container__title page-container__title--no-margin-right">Send</div>
+												</div>
+												<div class="ens-input send__to-row">
+													<div class="ens-input__wrapper ens-input__wrapper--valid">
+														<div class="ens-input__wrapper__status-icon ens-input__wrapper__status-icon--valid"></div>
+														<div class="ens-input__wrapper__input ens-input__wrapper__input--selected">
+															<div class="ens-input__selected-input__title">0x0722...4e85</div>
+														</div>
+														<div class="ens-input__wrapper__action-icon ens-input__wrapper__action-icon--erase"></div>
+													</div>
+												</div>
+												<div class="page-container__content">
+													<div class="send-v2__form">
+														<div class="dialog send__dialog dialog--message">New address detected! Click here to add to your address book.</div>
+														<div class="send-v2__form-row">
+															<div class="send-v2__form-label">Asset:</div>
+															<div class="send-v2__form-field">
+																<div class="send-v2__asset-dropdown">
+																	<div class="send-v2__asset-dropdown__input-wrapper">
+																		<div class="send-v2__asset-dropdown__asset">
+																			<div class="send-v2__asset-dropdown__asset-icon">
+																				<img class="identicon" src="./images/eth_logo.svg" alt="" style="height: 36px; width: 36px; border-radius: 18px;">
+																				</div>
+																				<div class="send-v2__asset-dropdown__asset-data">
+																					<div class="send-v2__asset-dropdown__symbol">ETH</div>
+																					<div class="send-v2__asset-dropdown__name">
+																						<span class="send-v2__asset-dropdown__name__label">Balance:</span>
+																						<div class="currency-display-component" title="0.391448 ETH">
+																							<span class="currency-display-component__text">0.391448</span>
+																							<span class="currency-display-component__suffix">ETH</span>
+																						</div>
+																					</div>
+																				</div>
+																				<i class="fa fa-caret-down fa-lg send-v2__asset-dropdown__caret"></i>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="send-v2__form-row">
+																<div class="send-v2__form-label">Amount:
+																	<button class="send-v2__amount-max">
+																		<input type="checkbox" readonly="">
+																			<div class="send-v2__amount-max__button">Max</div>
+																		</button>
+																	</div>
+																	<div class="send-v2__form-field-container">
+																		<div class="send-v2__form-field">
+																			<div class="unit-input">
+																				<div class="unit-input__inputs">
+																					<div class="unit-input__input-container" style="display:inline-flex;">
+																						<input type="number" dir="ltr" class="unit-input__input" placeholder="0" value="0" style="width: 100px;">
+																							<div class="unit-input__suffix">ETH</div>
+																						</div>
+																						<div class="currency-display-component currency-input__conversion-component" title="$0.00 USD">
+																							<span class="currency-display-component__text">$0.00</span>
+																							<span class="currency-display-component__suffix">USD</span>
+																						</div>
+																					</div>
+																					<div class="currency-input__swap-component"></div>
+																				</div>
+																			</div>
+																			<div></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="page-container__footer">
+																<footer>
+																	<a href="home.html" style="width: 100%; margin-right: 15px;">
+																		<button class="button btn--rounded btn-secondary page-container__footer-button" data-testid="page-container-footer-cancel" role="button" tabindex="0">Cancel</button>
+																	</a>
+
+																	<a href="confirm.html" style="width: 100%;">
+																		<button class="button btn--rounded btn-primary page-container__footer-button" data-testid="page-container-footer-next" role="button" tabindex="0">Next</button>
+																	</a>
+																</footer>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="popover-content"></div>
+											<script src="./globalthis.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./sentry-install.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./lockdown-install.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./lockdown-run.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./lockdown-more.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./runtime-cjs.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./common-0.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./common-1.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./common-2.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./common-3.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./ui-0.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./ui-1.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./ui-2.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./ui-3.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./ui-4.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./ui-5.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./ui-6.js" type="text/javascript" charset="utf-8"></script>
+											<script src="./ui-7.js" type="text/javascript" charset="utf-8"></script>
+										</body>
+									</html>
